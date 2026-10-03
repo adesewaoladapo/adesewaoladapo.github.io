@@ -12,17 +12,28 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-    /* Keep deep navy intro */
-    #intro {
-        background-color: #1b2230 !important;
-        background-image: none !important;
-    }
-    /* Muted slate blue background */
-    body, body::before, body::after, #wrapper {
-        background-color: #334155 !important;
-        background-image: none !important;
-    }
-</style>
+			/* Keep dark blue intro */
+			#intro {
+				background-color: #1b2230 !important;
+				background-image: none !important;
+			}
+
+			/* Muted slate blue background */
+			body, body::before, body::after, #wrapper {
+				background-color: #334155 !important;
+				background-image: none !important;
+			}
+
+			/* Removes the horizontal line behind Analytics & Business Intelligence */
+			.date::before,
+			.date::after,
+			header.major .date::before,
+			header.major .date::after {
+				display: none !important;
+				border: none !important;
+				background: none !important;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
